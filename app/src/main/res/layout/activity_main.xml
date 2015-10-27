@@ -1,0 +1,265 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/id1">
+
+
+
+    <!--************************************************************Input Labels************************************************************************************** -->
+    <TextView android:text="@string/home_value" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/home_value"
+        android:paddingTop="5pt"
+        android:textColor="#00d2f0"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/down_payment"
+        android:id="@+id/down_payment"
+        android:textColor="#00d2f0"
+        android:layout_alignBaseline="@+id/editTextDownPayment"
+        android:layout_alignBottom="@+id/editTextDownPayment"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/apr"
+        android:id="@+id/apr"
+        android:textColor="#00d2f0"
+        android:layout_alignBaseline="@+id/editTextApr"
+        android:layout_alignBottom="@+id/editTextApr"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/terms"
+        android:id="@+id/terms"
+        android:textColor="#00d2f0"
+        android:layout_alignTop="@+id/editTextTerms"
+        android:layout_alignLeft="@+id/pay_off_date"
+        android:layout_alignStart="@+id/pay_off_date" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tax_rate"
+        android:id="@+id/tax_rate"
+        android:textColor="#00d2f0"
+        android:layout_alignTop="@+id/editTextTaxRate"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:nestedScrollingEnabled="false" />
+
+    <!--************************************************************Input Labels End************************************************************************************** -->
+
+
+
+    <!--************************************************************Input Fields/TextBoxes************************************************************************************** -->
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextHomeValue"
+        android:layout_alignTop="@+id/home_value"
+        android:layout_toRightOf="@+id/home_value"
+        android:layout_alignLeft="@+id/editTextToTalTaxPaid"
+        android:layout_alignStart="@+id/editTextToTalTaxPaid"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextDownPayment"
+        android:layout_below="@+id/editTextHomeValue"
+        android:layout_alignRight="@+id/editTextHomeValue"
+        android:layout_alignEnd="@+id/editTextHomeValue"
+        android:layout_alignLeft="@+id/editTextToTalTaxPaid"
+        android:layout_alignStart="@+id/editTextToTalTaxPaid" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextApr"
+        android:layout_below="@+id/editTextDownPayment"
+        android:layout_alignRight="@+id/editTextDownPayment"
+        android:layout_alignEnd="@+id/editTextDownPayment"
+        android:inputType="none"
+        android:layout_alignLeft="@+id/editTextDownPayment"
+        android:layout_alignStart="@+id/editTextDownPayment" />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextTaxRate"
+        android:layout_below="@+id/editTextApr"
+        android:layout_marginTop="42dp"
+        android:layout_alignRight="@+id/editTextApr"
+        android:layout_alignEnd="@+id/editTextApr"
+        android:layout_alignLeft="@+id/editTextApr"
+        android:layout_alignStart="@+id/editTextApr" />
+
+    <!--************************************************************Input Fields/TextBoxes End************************************************************************************** -->
+
+
+
+    <!--************************************************************Output Labels************************************************************************************** -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/payment"
+        android:id="@+id/textView6"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_tax_paid"
+        android:id="@+id/total_tax_paid"
+        android:textColor="#00d2f0"
+        android:layout_alignBaseline="@+id/editTextToTalTaxPaid"
+        android:layout_alignBottom="@+id/editTextToTalTaxPaid"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pay_off_date"
+        android:id="@+id/pay_off_date"
+        android:textColor="#00d2f0"
+        android:layout_alignBaseline="@+id/editTextPayOffDate"
+        android:layout_alignBottom="@+id/editTextPayOffDate"
+        android:layout_alignRight="@+id/home_value"
+        android:layout_alignEnd="@+id/home_value" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_interest_paid"
+        android:id="@+id/total_interest_paid"
+        android:textColor="#00d2f0"
+        android:layout_alignBaseline="@+id/editTextTotalInterestPaid"
+        android:layout_alignBottom="@+id/editTextTotalInterestPaid"
+        android:layout_alignLeft="@+id/pay_off_date"
+        android:layout_alignStart="@+id/pay_off_date" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/monthly_payment"
+        android:id="@+id/monthly_payment"
+        android:textColor="#00d2f0"
+        android:layout_alignBaseline="@+id/editTextMonthlyPayment"
+        android:layout_alignBottom="@+id/editTextMonthlyPayment"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <!--************************************************************Output Labels end************************************************************************************** -->
+
+
+    <!--************************************************************Output Text Lines************************************************************************************** -->
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextToTalTaxPaid"
+        android:layout_below="@+id/textView6"
+        android:layout_toRightOf="@+id/textView6"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#000"
+        android:enabled="false"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextPayOffDate"
+        android:layout_below="@+id/editTextToTalTaxPaid"
+        android:layout_alignRight="@+id/editTextToTalTaxPaid"
+        android:layout_alignEnd="@+id/editTextToTalTaxPaid"
+        android:layout_alignLeft="@+id/editTextToTalTaxPaid"
+        android:layout_alignStart="@+id/editTextToTalTaxPaid"
+        android:enabled="false"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextTotalInterestPaid"
+        android:layout_below="@+id/editTextPayOffDate"
+        android:layout_alignLeft="@+id/editTextPayOffDate"
+        android:layout_alignStart="@+id/editTextPayOffDate"
+        android:layout_alignRight="@+id/editTextPayOffDate"
+        android:layout_alignEnd="@+id/editTextPayOffDate"
+        android:enabled="false"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextMonthlyPayment"
+        android:layout_below="@+id/total_interest_paid"
+        android:layout_alignLeft="@+id/editTextTotalInterestPaid"
+        android:layout_alignStart="@+id/editTextTotalInterestPaid"
+        android:layout_alignRight="@+id/editTextTotalInterestPaid"
+        android:layout_alignEnd="@+id/editTextTotalInterestPaid"
+        android:enabled="false"/>
+
+    <!--************************************************************Output Text Lines End************************************************************************************** -->
+
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:id="@+id/calculate_button"
+        android:layout_below="@+id/editTextMonthlyPayment"
+        android:layout_toRightOf="@+id/pay_off_date"
+        android:layout_toEndOf="@+id/pay_off_date" />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextTerms"
+        android:layout_above="@+id/tax_rate"
+        android:layout_alignRight="@+id/editTextTaxRate"
+        android:layout_alignEnd="@+id/editTextTaxRate"
+        android:layout_toEndOf="@+id/textView6"
+        android:layout_toRightOf="@+id/textView6" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:id="@+id/reset_button"
+        android:layout_below="@+id/editTextMonthlyPayment"
+        android:layout_toRightOf="@+id/calculate_button"
+        android:layout_toEndOf="@+id/calculate_button"
+        android:layout_marginLeft="38dp"
+        android:layout_marginStart="38dp" />
+
+
+</RelativeLayout>
+
